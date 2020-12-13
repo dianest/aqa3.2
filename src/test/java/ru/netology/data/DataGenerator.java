@@ -10,7 +10,7 @@ public class DataGenerator {
         return new User("vasya", "qwerty123");
     }
 
-    public static String getVerificationCode(String login) {
-        return DbUtils.getAuthCode(login);
+    public static User generateInvalidPasswordUser() {
+        return new User("vasya", "123");
     }
 }
